@@ -1,0 +1,147 @@
+/*--------------------head-------------------------*/
+.head{
+    background: #0f3460;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.head i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.head label     {
+    font-size: .8rem;
+    margin-right: 2rem;
+}
+/*--------------------head-------------------------*/
+/*--------------------Search-------------------------*/
+
+.search{
+    padding: 2rem 0;
+}
+.search .logo img{
+    width:auto;
+    height:4rem;
+}
+.search .width{
+    width: 20%;
+}
+.search-box{
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+
+}
+.search-box i{
+    width: 5%;
+    text-align: center;
+    font-size: 1rem;
+    opacity: .5;
+    padding: .5rem 1rem;
+
+}
+.search-box input{
+    width: 100%;
+    padding: .5rem ;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    font-size: .8rem;
+}
+
+.search-box span{
+    width: 20%;
+    opacity: .5;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding: .5rem;
+}
+.cart{
+    position: relative;
+}
+.search .cart span {
+    position: absolute;
+    top: 0rem;
+    right: -1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #903060;
+    color: #fff;
+} 
+.search .f_flex{
+    justify-content: end ;
+}
+
+/*--------------------Search-------------------------*/
+.categories {
+    background: #f6f9fc;
+    padding: 0 2rem;
+    border-radius: .5rem;
+    height: 3rem;
+    margin-top: .5rem;
+}
+.categories span{
+    margin-right: 1.5rem;
+    margin-top: .4rem;
+    font-size: 2rem;
+}
+.categories h4{
+    font-weight: 500;
+    margin-top: .9rem; 
+}
+.categories h4 i{
+    margin-left: .6rem;
+}
+header{
+    height: 4rem;
+    box-shadow: -1px 6px 9px -3px rgba(0,0,0,0.1);
+}
+header ul {
+    line-height: 5rem;
+    flex-direction: row-reverse;
+}
+header ul li {
+    margin-left: 2rem;
+}
+header ul li a{
+ transition: 0.5s;  
+ font-size: 1rem;
+ font-weight: 400;
+}
+header ul li a:hover{
+    color: #903060;
+}
+.open {
+    display: none;
+}
+.search.active {
+    height: 9rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    box-shadow: -1px 6px 9px -3px rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+@media (max-width:768px){
+    header ul {
+        padding-top: 2rem;
+    }
+    .nav-links-MobileMenu{
+        position: absolute;
+        display: block ;
+        list-style-type: none;
+        left: 0;
+        right: 0;
+        transition: 0.5s;
+        width: 60%;
+        height: 100vh;
+        background: #fff;
+        z-index: 888;
+    }
+
+}
